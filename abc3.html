@@ -6,11 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo">aaaaaaaaaaaaa</p>
     <h1>this is a asynchronous javascript</h1>
     <script>
         const numbers=[4,1,1,-30,5,-3 ,10]
-        const postnumbers=removeNeg(myNumbers,(x)=>x>0);
-        document.getElementById["demo"].innerHTML=postnumbers;
+        const postnumbers=removeNeg(numbers,(x)=> x>0);
+        document.getElementById("demo").innerHTML=postnumbers;
         function removeNeg(numbers,callback){
             const myArray=[];
             for(const x of numbers){
