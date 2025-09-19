@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is a asynchronous javascript</h1>
+    <script>
+        const numbers=[4,1,1,-30,5,-3 ,10]
+        const postnumbers=removeNeg(myNumbers,(x)=>x>0);
+        document.getElementById["demo"].innerHTML=postnumbers;
+        function removeNeg(numbers,callback){
+            const myArray=[];
+            for(const x of numbers){
+                if(callback(x)){
+                    myArray.push(x);
+                }
+            }
+            return myArray;
+        }
+    </script>
+</body>
+</html>
